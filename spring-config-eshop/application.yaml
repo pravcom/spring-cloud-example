@@ -1,0 +1,6 @@
+client:
+  eshop:
+    server:
+      port: 8081
+    database:
+      url: jdbc:postgresql://localhost:5432/shop

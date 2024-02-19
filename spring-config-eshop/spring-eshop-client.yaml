@@ -1,0 +1,17 @@
+server:
+  port: ${client.eshop.server.port}
+  
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: ${client.eshop.database.url}
+    username: postgres
+    password: admin
+  flyway:
+    baseline-on-migrate: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
